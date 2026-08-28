@@ -1,0 +1,64 @@
+# Boba Bash Greater Noida
+
+A clean, responsive, participant-facing event website for **Boba Bash Greater Noida**, crafted strictly according to the official **Boba Bash Design System & Brand Guide** ([boba-bash-brand.vercel.app](https://boba-bash-brand.vercel.app)).
+
+---
+
+## Official Schedule (9:30 AM – 3:30 PM)
+
+| Time | Activity | Description |
+| :--- | :--- | :--- |
+| **09:30 AM – 09:45 AM** | Opening Ceremony | Doors open, check-in & welcome kickoff |
+| **09:45 AM – 10:30 AM** | Web Dev Workshop | 45-min beginner hands-on web development session |
+| **10:30 AM – 11:30 AM** | Build Session 1 | Start building personal / project websites |
+| **11:30 AM – 11:45 AM** | Boba Break | 15-min bubble tea break & stretch |
+| **11:45 AM – 12:45 PM** | Build Session 2 | Adding features, styling, and refining |
+| **12:45 PM – 01:15 PM** | Shipping & RFID Station | Deploy websites + write live link into RFID smart ID cards |
+| **01:15 PM – 01:45 PM** | Hot Lunch Break | Lunch & social break |
+| **01:45 PM – 02:15 PM** | Showcase Round | Tap RFID cards, show off websites & community voting |
+| **02:15 PM – 03:15 PM** | Networking & Mini-Games | Type racing, trivia, challenges & networking |
+| **03:15 PM – 03:30 PM** | Closing Ceremony | Certificates distribution, swag drops & wrap up |
+
+---
+
+## Venue & Location
+- **Venue**: MetroDesk Coworking
+- **Location**: Ghaziabad Namo Bharat (RRTS) & Metro Station, Patel Nagar, Sector 7, Uttar Pradesh 201005
+- **Google Maps**: [https://maps.app.goo.gl/8pEJfEtoYx5Gmmd47](https://maps.app.goo.gl/8pEJfEtoYx5Gmmd47)
+
+---
+
+## Sponsors & Partners
+- **Hack Club** (`hack-club-icon-rounded.svg`): Global nonprofit community of teen hackers & coding clubs.
+- **HCB** (`hcb-icon-icon-original.svg`): 501(c)(3) fiscal sponsor and financial platform for student hackathons.
+- **.XYZ Domains** (`xyz-logo-color.svg`): Providing free domain names for all participants.
+
+---
+
+## Contact & Reach Out
+- **Email**: `heyyitsmeaditya@gmail.com`
+
+---
+
+## Brand Tokens Applied
+- **Surface**: `#fbf6e8` (warm cream)
+- **Surface Alt**: `#f0e9d8` (card container beige)
+- **Ink / Line**: `#3d2b18` (deep espresso brown)
+- **Ink Muted**: `#6b5842`
+- **Ink Soft**: `#9a8064`
+- **Bubble**: `#a9d8ee` (soft sky blue)
+- **Bubble Ink**: `#274156` (navy slate)
+- **Goldenrod**: `#f2c14e` (boba yellow accent)
+- **Apply Gradient**: `linear-gradient(180deg, #c0dfc6 0%, #85c5da 44%, #6fbbe2 81%, #b6dbc9 100%)`
+- **Fonts**: `Baloo 2` (Headings & Badges), `Poppins` (Body text), `JetBrains Mono` (Code/Details)
+
+---
+
+## How to Run Locally
+
+1. Double-click [index.html](file:///C:/Users/legen/Desktop/boba-bash-gr.noida-website/index.html) in your browser.
+2. Or run a local HTTP server:
+   ```bash
+   python -m http.server 8000
+   ```
+   Then visit `http://localhost:8000`.

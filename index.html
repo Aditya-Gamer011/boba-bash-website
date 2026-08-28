@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boba Bash Greater Noida | In-Person Teen Hackathon</title>
+  
+  <!-- Meta tags for social sharing -->
+  <meta name="description" content="Boba Bash Greater Noida: A free, beginner-friendly teen hackathon with coding, making cool projects, and unlimited fresh boba tea in Greater Noida, NCR!" />
+  <meta property="og:title" content="Boba Bash Greater Noida" />
+  <meta property="og:description" content="Join 60+ teen hackers in Greater Noida for a day of making, learning, and drinking fresh boba!" />
+  <meta property="og:image" content="cup.png" />
+  <link rel="icon" type="image/png" href="cup.png" />
+  <meta name="theme-color" content="#fbf6e8" />
+
+  <!-- Fonts from Boba Bash brand guide -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background decorative floating boba pearls canvas -->
+  <div class="floating-boba-container" aria-hidden="true" id="bobaCanvas"></div>
+
+  <!-- Top Announcement Bar in Official Goldenrod -->
+  <aside class="top-banner">
+    <div class="container banner-content">
+      <span class="banner-badge">IN-PERSON EVENT</span>
+      <p class="banner-text">Boba Bash is coming to <strong>Greater Noida, NCR</strong>! Free entry and unlimited boba tea.</p>
+      <a href="#rsvp" class="banner-link">RSVPs Opening Soon &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="brand-logo-link" aria-label="Boba Bash Greater Noida Home">
+        <img src="logofull.png" alt="Boba Bash Logo" class="brand-logo" />
+        <span class="city-pill">Greater Noida</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#sponsors" class="nav-link">Sponsors</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#venue" class="nav-link">Venue</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#rsvp" class="btn btn-gradient btn-nav">
+          RSVPs Opening Soon &rarr;
+        </a>
+        <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text-col">
+        
+        <!-- Speech Bubble Badge Component from Brand Guide -->
+        <div class="speech-bubble">
+          <div class="bubble-pill">
+            <span class="hero-badge-text">GREATER NOIDA • DELHI NCR</span>
+          </div>
+          <div class="bubble_tail" aria-hidden="true"></div>
+        </div>
+
+        <h1 class="hero-title font-display">
+          Build cool stuff.<br />
+          Sip infinite <span class="highlight-boba">Boba.</span>
+        </h1>
+
+        <p class="hero-description text-body">
+          A vibrant one-day gathering for middle school, high school, and teen makers across Greater Noida &amp; Delhi NCR. Code, build websites, make hardware, hang out with fellow creators, and sip fresh bubble tea all day long!
+        </p>
+
+        <!-- Quick Event Meta Tags with Crisp SVG Icons -->
+        <div class="event-meta-cards">
+          <div class="meta-card">
+            <div class="meta-icon-box">
+              <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="meta-info">
+              <span class="meta-label">DATE &amp; TIME</span>
+              <strong class="meta-value">Saturday, 9:30 AM – 3:30 PM</strong>
+            </div>
+          </div>
+
+          <div class="meta-card">
+            <div class="meta-icon-box">
+              <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="meta-info">
+              <span class="meta-label">VENUE</span>
+              <strong class="meta-value">MetroDesk Coworking</strong>
+            </div>
+          </div>
+
+          <div class="meta-card">
+            <div class="meta-icon-box">
+              <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+            </div>
+            <div class="meta-info">
+              <span class="meta-label">ADMISSION</span>
+              <strong class="meta-value">100% Free ($0) • Meals &amp; Boba</strong>
+            </div>
+          </div>
+
+          <div class="meta-card">
+            <div class="meta-icon-box">
+              <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="meta-info">
+              <span class="meta-label">WHO CAN COME?</span>
+              <strong class="meta-value">All Teens &amp; Beginners Welcome</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="#rsvp" class="btn btn-gradient btn-lg">
+            RSVPs Opening Soon &rarr;
+          </a>
+          <a href="#about" class="btn btn-surface btn-lg">
+            Learn More &darr;
+          </a>
+        </div>
+
+        <div class="hero-social-proof">
+          <span class="pill-badge">
+            60 Hacker spots
+          </span>
+          <span class="text-caption text-ink-soft">Beginner friendly • No prior experience needed!</span>
+        </div>
+
+      </div>
+
+      <!-- Hero Mascot & Cup Visual -->
+      <div class="hero-visual-col">
+        <div class="hero-illustration-card border-line bg-surface shadow-card border-2">
+          <div class="mascot-badge-tag">
+            <img src="logowordmark.png" alt="Boba Bash Wordmark" class="wordmark-hero" />
+          </div>
+
+          <div class="cup-display-wrapper">
+            <img src="cup.png" alt="Boba Bash Cup Icon" class="boba-cup-hero" />
+            
+            <div class="floating-sticker sticker-1 shadow-control">
+              <span>Free Boba</span>
+            </div>
+            <div class="floating-sticker sticker-2 shadow-control">
+              <span>Hack &amp; Build</span>
+            </div>
+            <div class="floating-sticker sticker-3 shadow-control">
+              <span>Custom Merch</span>
+            </div>
+          </div>
+
+          <div class="card-footer-note bg-surface-alt border-line border-t-2">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="font-display font-bold text-ink mb-0">Boba Bash Greater Noida</h3>
+                <p class="text-caption text-ink-muted">MetroDesk Coworking, NCR</p>
+              </div>
+              <span class="status-pill font-display">Spots Open Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section bg-surface-alt border-line border-t-2 border-b-2">
+    <div class="container">
+      <div class="section-header text-center">
+        <!-- Bubble Header from Brand Guide -->
+        <div class="speech-bubble">
+          <div class="bubble-pill">
+            <h2 class="text-heading">What is Boba Bash?</h2>
+          </div>
+          <div class="bubble_tail" aria-hidden="true"></div>
+        </div>
+        <p class="text-subheading text-ink-muted max-w-3xl mx-auto">
+          Boba Bash is an energetic, welcoming day of making things with tech, meeting friends, and drinking delicious bubble tea.
+        </p>
+      </div>
+
+      <div class="cards-grid-3">
+        <!-- Card 1 -->
+        <div class="border-line bg-surface shadow-card flex flex-col border-2 card-hover">
+          <div class="flex flex-1 flex-col p-5">
+            <div class="card-icon-box bg-bubble border-line border-2">
+              <svg class="feature-svg" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="font-display text-heading text-ink leading-tight font-bold mt-3">Learn &amp; Build Websites</h3>
+            <p class="text-body text-ink-muted mt-2">
+              Start with our 45-minute live Web Dev Workshop at 9:45 AM! Learn HTML/CSS basics, then spend two focused build sessions coding your personal or project website with hands-on mentor support.
+            </p>
+            <div class="mt-auto pt-4 flex items-center gap-2">
+              <span class="pill-badge">Beginner Workshop Included</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="border-line bg-surface shadow-card flex flex-col border-2 card-hover">
+          <div class="flex flex-1 flex-col p-5">
+            <div class="card-icon-box bg-goldenrod border-line border-2">
+              <svg class="feature-svg" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+                <path d="M7 15h2"></path>
+              </svg>
+            </div>
+            <h3 class="font-display text-heading text-ink leading-tight font-bold mt-3">RFID Smart Badges</h3>
+            <p class="text-body text-ink-muted mt-2">
+              Ship your website online and bring it to our <strong>RFID Station</strong>! We'll write your live website link into your physical RFID ID badge so anyone can tap and view your creation instantly.
+            </p>
+            <div class="mt-auto pt-4 flex items-center gap-2">
+              <span class="pill-badge">Tap to View Project</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="border-line bg-surface shadow-card flex flex-col border-2 card-hover">
+          <div class="flex flex-1 flex-col p-5">
+            <div class="card-icon-box bg-bubble border-line border-2">
+              <img src="cup.png" alt="Boba Cup" class="feature-cup-img" />
+            </div>
+            <h3 class="font-display text-heading text-ink leading-tight font-bold mt-3">Boba, Games &amp; Community</h3>
+            <p class="text-body text-ink-muted mt-2">
+              Enjoy fresh boba tea breaks, hot lunch, an exciting showcase round, mini-games &amp; trivia, networking with teen makers, official certificates, and awesome swag!
+            </p>
+            <div class="mt-auto pt-4 flex items-center gap-2">
+              <span class="pill-badge">100% Free • 9:30 AM – 3:30 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <!-- Bubble Header from Brand Guide -->
+        <div class="speech-bubble">
+          <div class="bubble-pill">
+            <h2 class="text-heading">Event Schedule</h2>
+          </div>
+          <div class="bubble_tail" aria-hidden="true"></div>
+        </div>
+        <p class="text-subheading text-ink-muted max-w-3xl mx-auto">
+          One packed Saturday of coding, learning, gaming, and sipping.
+        </p>
+      </div>
+
+      <div class="timeline-wrapper">
+        
+        <!-- Timeline Item 1: 09:30 AM - 09:45 AM -->
+        <div class="timeline-item">
+          <div class="time-pill font-display">09:30 AM</div>
+          <div class="timeline-content border-line bg-surface shadow-card border-2">
+            <div class="timeline-header">
+              <h3 class="font-display font-bold text-ink">Opening Ceremony</h3>
+              <span class="tag-pill">09:30 – 09:45 AM</span>
+            </div>
+            <p class="text-body text-ink-muted">
+              Doors open, check-in, collect your Boba Bash RFID-enabled badge &amp; sticker pack, and kickoff with a quick welcome from the organizers!
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: 09:45 AM - 10:30 AM -->
+        <div class="timeline-item">
+          <div class="time-pill font-display">09:45 AM</div>
+          <div class="timeline-content border-line bg-surface shadow-card border-2">
+            <div class="timeline-header">
+              <h3 class="font-display font-bold text-ink">45-Min Web Dev Workshop</h3>
+              <span class="tag-pill">09:45 – 10:30 AM</span>
+            </div>
+            <p class="text-body text-ink-muted">
+              Interactive crash course for everyone! Learn the fundamentals of HTML, CSS, and how to build &amp; deploy your very own website from scratch.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3: 10:30 AM - 11:30 AM -->
+        <div class="timeline-item">
+          <div class="time-pill font-display">10:30 AM</div>
+          <div class="timeline-content border-line bg-surface shadow-card border-2">
+            <div class="timeline-header">
+              <h3 class="font-display font-bold text-ink">Build Session 1</h3>
+              <span class="tag-pill">10:30 – 11:30 AM</span>
+            </div>
+            <p class="text-body text-ink-muted">
+              Put your ideas into code! Start building your website project with friendly mentors walking around to help debug and guide you.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4: 11:30 AM - 11:45 AM -->
+        <div class="timeline-item">
+          <div class="time-pill font-display">11:30 AM</div>
+          <div class="timeline-content border-line bg-surface shadow-card border-2">
+            <div class="timeline-header">
+              <h3 class="font-display font-bold text-ink">15-Min Boba Break</h3>
+              <span class="tag-pill">11:30 – 11:45 AM</span>
+            </div>
+            <p class="text-body text-ink-muted">
+              Time for fresh boba! Grab your freshly brewed cup of milk tea or fruit tea, stretch, and chat with fellow hackers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 5: 11:45 AM - 12:45 PM -->
+        <div class="timeline-item">
+          <div class="time-pill font-display">11:45 AM</div>
+          <div class="timeline-content border-line bg-surface shadow-card border-2">
+            <div class="timeline-header">
+              <h3 class="font-display font-bold text-ink">Build Session 2</h3>
+              <span class="tag-pill">11:45 AM – 12:45 PM</span>
+            </div>
+            <p class="text-body text-ink-muted">
+              Back to building! Refine your website, add animations, style components, and bring your creative vision to life.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 6: 12:45 PM - 01:15 PM -->
+        <div class="timeline-item">
+          <div class="time-pill font-display">12:45 PM</div>
+          <div class="timeline-content border-line bg-surface shadow-card border-2">
+            <div class="timeline-header">
+              <h3 class="font-display font-bold text-ink">Shipping Time &amp; RFID Station</h3>
+              <span class="tag-pill">12:45 – 01:15 PM</span>
+            </div>
+            <p class="text-body text-ink-muted">
+              Get hands-on help deploying your website online! Visit our <strong>RFID Station</strong> where we write your live website link directly onto your physical RFID smart ID card!
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 7: 01:15 PM - 01:45 PM -->
+        <div class="timeline-item">
+          <div class="time-pill font-display">01:15 PM</div>
+          <div class="timeline-content border-line bg-surface shadow-card border-2">
+            <div class="timeline-header">
+              <h3 class="font-display font-bold text-ink">Hot Lunch Break</h3>
+              <span class="tag-pill">01:15 – 01:45 PM</span>
+            </div>
+            <p class="text-body text-ink-muted">
+              Enjoy a delicious hot lunch with vegetarian &amp; vegan options, relax, and refuel your creative energy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 8: 01:45 PM - 02:15 PM -->
+        <div class="timeline-item">
+          <div class="time-pill font-display">01:45 PM</div>
+          <div class="timeline-content border-line bg-surface shadow-card border-2">
+            <div class="timeline-header">
+              <h3 class="font-display font-bold text-ink">Project Showcase Round</h3>
+              <span class="tag-pill">01:45 – 02:15 PM</span>
+            </div>
+            <p class="text-body text-ink-muted">
+              Walk around, tap RFID cards to load each other's live websites on phones, celebrate everyone's builds, and share feedback!
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 9: 02:15 PM - 03:15 PM -->
+        <div class="timeline-item">
+          <div class="time-pill font-display">02:15 PM</div>
+          <div class="timeline-content border-line bg-surface shadow-card border-2">
+            <div class="timeline-header">
+              <h3 class="font-display font-bold text-ink">Community Networking &amp; Mini-Games</h3>
+              <span class="tag-pill">02:15 – 03:15 PM</span>
+            </div>
+            <p class="text-body text-ink-muted">
+              High-energy social hour! Type-racing showdowns, tech trivia battles, fun challenges, making new friends, and networking.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 10: 03:15 PM - 03:30 PM -->
+        <div class="timeline-item">
+          <div class="time-pill font-display">03:15 PM</div>
+          <div class="timeline-content border-line bg-surface shadow-card border-2">
+            <div class="timeline-header">
+              <h3 class="font-display font-bold text-ink">Closing Ceremony &amp; Certificates</h3>
+              <span class="tag-pill">03:15 – 03:30 PM</span>
+            </div>
+            <p class="text-body text-ink-muted">
+              Official certificate distribution, final swag drops, group photo, and wraps up at 3:30 PM with high fives!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors & Partners Section -->
+  <section id="sponsors" class="section bg-surface-alt border-line border-t-2 border-b-2">
+    <div class="container">
+      <div class="section-header text-center">
+        <!-- Bubble Header from Brand Guide -->
+        <div class="speech-bubble">
+          <div class="bubble-pill">
+            <h2 class="text-heading">Our Sponsors &amp; Partners</h2>
+          </div>
+          <div class="bubble_tail" aria-hidden="true"></div>
+        </div>
+        <p class="text-subheading text-ink-muted max-w-3xl mx-auto">
+          Big shoutout to the generous organizations powering Boba Bash Greater Noida with community support, fiscal backing, and domains!
+        </p>
+      </div>
+
+      <div class="sponsors-grid">
+        <!-- Sponsor 1: Hack Club -->
+        <div class="sponsor-card border-line border-2 shadow-card">
+          <div class="sponsor-logo-wrap">
+            <img src="hack-club-icon-rounded.svg" alt="Hack Club Logo" class="sponsor-logo-img" />
+          </div>
+          <h3 class="sponsor-name font-display font-bold">Hack Club</h3>
+          <p class="sponsor-desc">
+            A global nonprofit community of high school makers, coders, and artists supporting student-led clubs and hackathons worldwide.
+          </p>
+          <div class="sponsor-footer">
+            <span class="sponsor-badge">COMMUNITY PARTNER</span>
+            <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer" class="sponsor-link">hackclub.com &nearr;</a>
+          </div>
+        </div>
+
+        <!-- Sponsor 2: HCB -->
+        <div class="sponsor-card border-line border-2 shadow-card">
+          <div class="sponsor-logo-wrap">
+            <img src="hcb-icon-icon-original.svg" alt="HCB Logo" class="sponsor-logo-img sponsor-logo-hcb" />
+          </div>
+          <h3 class="sponsor-name font-display font-bold">HCB</h3>
+          <p class="sponsor-desc">
+            The 501(c)(3) fiscal sponsorship platform and financial home for student organizers and high school hackathons across the globe.
+          </p>
+          <div class="sponsor-footer">
+            <span class="sponsor-badge">FISCAL SPONSOR</span>
+            <a href="https://hcb.hackclub.com" target="_blank" rel="noopener noreferrer" class="sponsor-link">hcb.hackclub.com &nearr;</a>
+          </div>
+        </div>
+
+        <!-- Sponsor 3: .XYZ Domains -->
+        <div class="sponsor-card border-line border-2 shadow-card">
+          <div class="sponsor-logo-wrap">
+            <img src="xyz-logo-color.svg" alt=".XYZ Logo" class="sponsor-logo-img" />
+          </div>
+          <h3 class="sponsor-name font-display font-bold">.XYZ Domains</h3>
+          <p class="sponsor-desc">
+            The domain registry of choice for the next generation of internet innovators, providing free domain names for all participants.
+          </p>
+          <div class="sponsor-footer">
+            <span class="sponsor-badge">DOMAIN SPONSOR</span>
+            <a href="https://gen.xyz" target="_blank" rel="noopener noreferrer" class="sponsor-link">gen.xyz &nearr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sponsor Reach-out Card without links -->
+      <div class="sponsor-callout-card border-line border-2 shadow-card">
+        <div>
+          <h3 class="font-display font-bold text-ink mb-1" style="font-size:1.25rem;">Want to sponsor Boba Bash Greater Noida?</h3>
+          <p class="text-body text-ink-muted mb-0">Help us sponsor extra boba refills, stickers, hardware components, or meals for teen creators.</p>
+        </div>
+        <div class="contact-email-badge">
+          heyyitsmeaditya@gmail.com
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RSVP Section -->
+  <section id="rsvp" class="section">
+    <div class="container">
+      <div class="rsvp-card-wrapper border-line bg-surface shadow-card border-2 text-center" style="padding: 56px 24px;">
+        
+        <div class="speech-bubble">
+          <div class="bubble-pill">
+            <h2 class="text-heading">RSVP</h2>
+          </div>
+          <div class="bubble_tail" aria-hidden="true"></div>
+        </div>
+
+        <h3 class="font-display text-title font-bold text-ink">RSVPs Opening Soon!</h3>
+        <p class="text-subheading text-ink-muted max-w-2xl mx-auto mt-2">
+          Registration for Boba Bash Greater Noida will open shortly. Stay tuned, gather your project ideas, and check back soon to claim your free ticket and boba pass!
+        </p>
+
+        <div class="mt-4 flex justify-center items-center gap-3 flex-wrap">
+          <span class="pill-badge pill-badge-lg">
+            100% Free Admission
+          </span>
+          <span class="pill-badge pill-badge-lg">
+            Unlimited Boba Included
+          </span>
+          <span class="pill-badge pill-badge-lg">
+            60 Spots Capacity
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section bg-surface-alt border-line border-t-2 border-b-2">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="speech-bubble">
+          <div class="bubble-pill">
+            <h2 class="text-heading">Frequently Asked Questions</h2>
+          </div>
+          <div class="bubble_tail" aria-hidden="true"></div>
+        </div>
+        <p class="text-subheading text-ink-muted max-w-3xl mx-auto">
+          Everything you need to know before attending Boba Bash Greater Noida.
+        </p>
+      </div>
+
+      <div class="faq-accordion-wrapper max-w-3xl mx-auto">
+        
+        <details class="faq-item border-line bg-surface shadow-card border-2" open>
+          <summary class="faq-question font-display font-bold text-ink">
+            <span>What is Boba Bash?</span>
+            <span class="faq-chevron">&plus;</span>
+          </summary>
+          <div class="faq-answer text-body text-ink-muted">
+            Boba Bash is an in-person, student-run hackathon and creative coding jam. Teens come together to build projects (websites, games, apps, hardware, design prototypes), learn from mentors, eat great food, and drink unlimited freshly brewed bubble tea.
+          </div>
+        </details>
+
+        <details class="faq-item border-line bg-surface shadow-card border-2">
+          <summary class="faq-question font-display font-bold text-ink">
+            <span>Who can participate?</span>
+            <span class="faq-chevron">&plus;</span>
+          </summary>
+          <div class="faq-answer text-body text-ink-muted">
+            Any middle school or high school student (ages ~13–19) and first-year university/college students in Greater Noida, Noida, Delhi, Ghaziabad, and NCR are welcome!
+          </div>
+        </details>
+
+        <details class="faq-item border-line bg-surface shadow-card border-2">
+          <summary class="faq-question font-display font-bold text-ink">
+            <span>I have never coded before. Can I still attend?</span>
+            <span class="faq-chevron">&plus;</span>
+          </summary>
+          <div class="faq-answer text-body text-ink-muted">
+            <strong>YES, 100%!</strong> Boba Bash is explicitly built to be beginner-friendly. Right after our 9:30 AM opening ceremony, we host a dedicated <strong>45-minute Web Dev Workshop (9:45 – 10:30 AM)</strong> where you'll learn how to build and style a website from scratch with mentor guidance!
+          </div>
+        </details>
+
+        <details class="faq-item border-line bg-surface shadow-card border-2">
+          <summary class="faq-question font-display font-bold text-ink">
+            <span>How do the RFID-enabled ID cards work?</span>
+            <span class="faq-chevron">&plus;</span>
+          </summary>
+          <div class="faq-answer text-body text-ink-muted">
+            Every participant receives an RFID-enabled ID badge at check-in. During our 12:45 PM shipping session, our team will program your badge with your live website link at the RFID station. During the 1:45 PM showcase, attendees can simply tap your card with their phones to instantly open your website!
+          </div>
+        </details>
+
+        <details class="faq-item border-line bg-surface shadow-card border-2">
+          <summary class="faq-question font-display font-bold text-ink">
+            <span>How much does it cost?</span>
+            <span class="faq-chevron">&plus;</span>
+          </summary>
+          <div class="faq-answer text-body text-ink-muted">
+            It is <strong>completely free ($0)</strong>! Thanks to our sponsors and community partners, your admission, meals, boba drinks, stickers, and swag are fully covered.
+          </div>
+        </details>
+
+        <details class="faq-item border-line bg-surface shadow-card border-2">
+          <summary class="faq-question font-display font-bold text-ink">
+            <span>What should I bring?</span>
+            <span class="faq-chevron">&plus;</span>
+          </summary>
+          <div class="faq-answer text-body text-ink-muted">
+            Bring your laptop, charger, student ID, a water bottle, and a curious mindset! If you don't have a laptop, reach out to our team in advance and we'll do our best to pair you with a team.
+          </div>
+        </details>
+
+        <details class="faq-item border-line bg-surface shadow-card border-2">
+          <summary class="faq-question font-display font-bold text-ink">
+            <span>Can I work in teams?</span>
+            <span class="faq-chevron">&plus;</span>
+          </summary>
+          <div class="faq-answer text-body text-ink-muted">
+            Yes! You can work solo or in teams of up to 4 people. If you don't have a team yet, don't worry — we help everyone connect and form teams during the opening kickoff.
+          </div>
+        </details>
+
+        <details class="faq-item border-line bg-surface shadow-card border-2">
+          <summary class="faq-question font-display font-bold text-ink">
+            <span>Is the boba tea really unlimited?</span>
+            <span class="faq-chevron">&plus;</span>
+          </summary>
+          <div class="faq-answer text-body text-ink-muted">
+            Yes! We have fresh batches of milk tea, fruit teas, and chewy tapioca pearls brewed on site throughout the event.
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue & Travel Section -->
+  <section id="venue" class="section">
+    <div class="container">
+      <div class="venue-grid">
+        <div class="venue-info-col">
+          <div class="speech-bubble">
+            <div class="bubble-pill">
+              <h2 class="text-heading">Venue &amp; Location</h2>
+            </div>
+            <div class="bubble_tail" aria-hidden="true"></div>
+          </div>
+          <h3 class="font-display text-title font-bold text-ink mt-2">MetroDesk Coworking</h3>
+          <p class="text-body text-ink-muted">
+            The event will be hosted at <strong>MetroDesk Coworking</strong>, located conveniently inside the Ghaziabad Namo Bharat (RRTS) &amp; Metro Station concourse. Equipped with high-speed fiber WiFi, dedicated desk power plugs, air conditioning, and a modern, vibrant workspace.
+          </p>
+
+          <div class="venue-points mt-3">
+            <div class="venue-point">
+              <div class="point-icon">
+                <svg class="point-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="3" width="16" height="16" rx="2"></rect>
+                  <path d="M4 11h16"></path>
+                  <path d="M12 3v8"></path>
+                  <path d="m8 19-2 3"></path>
+                  <path d="m16 19 2 3"></path>
+                  <circle cx="8" cy="15" r="1"></circle>
+                  <circle cx="16" cy="15" r="1"></circle>
+                </svg>
+              </div>
+              <div>
+                <strong class="font-display text-ink">Namo Bharat (RRTS) &amp; Metro Connected</strong>
+                <p class="text-caption text-ink-soft">Direct access from the station concourse level for seamless transit across Delhi-NCR.</p>
+              </div>
+            </div>
+
+            <div class="venue-point">
+              <div class="point-icon">
+                <svg class="point-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9C1.5 11.2 1 12 1 13v3c0 .6.4 1 1 1h2"></path>
+                  <circle cx="7" cy="17" r="2"></circle>
+                  <path d="M9 17h6"></path>
+                  <circle cx="17" cy="17" r="2"></circle>
+                </svg>
+              </div>
+              <div>
+                <strong class="font-display text-ink">Road &amp; Expressway Access</strong>
+                <p class="text-caption text-ink-soft">Easy commute via main expressways with on-site station parking.</p>
+              </div>
+            </div>
+
+            <div class="venue-point">
+              <div class="point-icon">
+                <svg class="point-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <strong class="font-display text-ink">Safe &amp; Supervised Workspace</strong>
+                <p class="text-caption text-ink-soft">Full mentor support, secure check-in, and professional facilities throughout the event.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="venue-card-col">
+          <div class="border-line bg-surface shadow-card border-2 p-5 venue-box">
+            <div class="venue-map-placeholder border-line border-2">
+              <div class="map-inner">
+                <div class="map-pin">
+                  <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <h4 class="font-display font-bold text-ink">MetroDesk Coworking</h4>
+                <p class="text-caption text-ink-muted">Ghaziabad Namo Bharat (RRTS) Metro Station, Patel Nagar, UP 201005</p>
+                <a href="https://maps.app.goo.gl/8pEJfEtoYx5Gmmd47" target="_blank" rel="noopener noreferrer" class="btn btn-surface btn-sm mt-2">
+                  Open in Google Maps &nearr;
+                </a>
+              </div>
+            </div>
+            <div class="venue-extra-info mt-3 pt-3 border-line border-t">
+              <p class="text-caption text-ink-muted mb-0">
+                Opposite ticket counter entry gate, Sector 7, Patel Nagar. Passes will be issued upon arrival.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Reachout Banner -->
+  <section class="section-cta bg-surface-alt border-line border-t-2">
+    <div class="container text-center">
+      <div class="mascot-row mb-3">
+        <img src="logodetail.png" alt="Boba Bash Mascot Detail" class="footer-mascot" />
+      </div>
+      <h2 class="font-display text-title font-bold text-ink">Ready to brew something incredible?</h2>
+      <p class="text-subheading text-ink-muted max-w-2xl mx-auto mb-4">
+        Have questions, ideas, or want to partner with us? You can reach out directly to our team anytime.
+      </p>
+      <div class="flex justify-center gap-3 flex-wrap">
+        <div class="contact-email-badge" style="font-size: 1.05rem; padding: 12px 28px;">
+          heyyitsmeaditya@gmail.com
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Redesigned Clean Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-main-grid">
+      
+      <!-- Brand & Info Column -->
+      <div class="footer-brand-wrap">
+        <div class="footer-logo-row">
+          <img src="logofull.png" alt="Boba Bash Logo" class="footer-logo" />
+          <span class="city-pill">Greater Noida</span>
+        </div>
+        <p class="footer-desc">
+          An in-person teen hackathon bringing together creators, builders, and learners for code, community, and fresh boba tea.
+        </p>
+        <div class="contact-email-badge" style="width: fit-content;">
+          heyyitsmeaditya@gmail.com
+        </div>
+      </div>
+
+      <!-- Quick Navigation Column -->
+      <div class="footer-nav-col">
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+      </div>
+
+      <!-- Event Venue Quick Card -->
+      <div class="footer-info-col">
+        <h4 class="footer-col-title">Venue Details</h4>
+        <div class="footer-info-card">
+          <span class="footer-info-heading">Location</span>
+          <p class="footer-info-body mb-0">
+            <strong>MetroDesk Coworking</strong><br />
+            Ghaziabad Namo Bharat (RRTS) &amp; Metro Station, Patel Nagar, UP 201005
+          </p>
+          <a href="https://maps.app.goo.gl/8pEJfEtoYx5Gmmd47" target="_blank" rel="noopener noreferrer" class="sponsor-link mt-1">
+            Open in Google Maps &nearr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Clean Bottom Bar -->
+    <div class="footer-bottom-bar">
+      <div class="container">
+        <p class="footer-copyright">
+          &copy; 2026 Boba Bash Greater Noida. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
