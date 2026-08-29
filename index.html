@@ -48,13 +48,16 @@
         <a href="#sponsors" class="nav-link">Sponsors</a>
         <a href="#faq" class="nav-link">FAQ</a>
         <a href="#venue" class="nav-link">Venue</a>
+        <a href="#rsvp" class="btn btn-gradient btn-mobile-nav">
+          RSVPs Opening Soon &rarr;
+        </a>
       </nav>
 
       <div class="nav-actions">
         <a href="#rsvp" class="btn btn-gradient btn-nav">
           RSVPs Opening Soon &rarr;
         </a>
-        <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
           <span></span>
           <span></span>
           <span></span>
@@ -62,6 +65,7 @@
       </div>
     </div>
   </header>
+  <div class="mobile-backdrop" id="menuBackdrop" aria-hidden="true"></div>
 
   <!-- Hero Section -->
   <section class="hero-section">
@@ -496,12 +500,27 @@
             <a href="https://gen.xyz" target="_blank" rel="noopener noreferrer" class="sponsor-link">gen.xyz &nearr;</a>
           </div>
         </div>
+
+        <!-- Sponsor 4: OSEN -->
+        <div class="sponsor-card border-line border-2 shadow-card">
+          <div class="sponsor-logo-wrap">
+            <img src="OSEN.png" alt="OSEN Logo" class="sponsor-logo-img" />
+          </div>
+          <h3 class="sponsor-name font-display font-bold">OSEN</h3>
+          <p class="sponsor-desc">
+            Empowering student hackathons, developer meetups, and builder communities across India with sponsorships, resources, and event support.
+          </p>
+          <div class="sponsor-footer">
+            <span class="sponsor-badge">COMMUNITY SPONSOR</span>
+            <a href="https://osen.live" target="_blank" rel="noopener noreferrer" class="sponsor-link">osen.live &nearr;</a>
+          </div>
+        </div>
       </div>
 
       <!-- Sponsor Reach-out Card without links -->
       <div class="sponsor-callout-card border-line border-2 shadow-card">
         <div>
-          <h3 class="font-display font-bold text-ink mb-1" style="font-size:1.25rem;">Want to sponsor Boba Bash Greater Noida?</h3>
+          <h3 class="sponsor-callout-title font-display font-bold text-ink mb-1">Want to sponsor Boba Bash Greater Noida?</h3>
           <p class="text-body text-ink-muted mb-0">Help us sponsor extra boba refills, stickers, hardware components, or meals for teen creators.</p>
         </div>
         <div class="contact-email-badge">
@@ -515,7 +534,7 @@
   <!-- RSVP Section -->
   <section id="rsvp" class="section">
     <div class="container">
-      <div class="rsvp-card-wrapper border-line bg-surface shadow-card border-2 text-center" style="padding: 56px 24px;">
+      <div class="rsvp-card-wrapper border-line bg-surface shadow-card border-2 text-center">
         
         <div class="speech-bubble">
           <div class="bubble-pill">
@@ -529,7 +548,7 @@
           Registration for Boba Bash Greater Noida will open shortly. Stay tuned, gather your project ideas, and check back soon to claim your free ticket and boba pass!
         </p>
 
-        <div class="mt-4 flex justify-center items-center gap-3 flex-wrap">
+        <div class="mt-4 flex justify-center items-center gap-3 flex-wrap rsvp-badges">
           <span class="pill-badge pill-badge-lg">
             100% Free Admission
           </span>
@@ -749,7 +768,7 @@
         Have questions, ideas, or want to partner with us? You can reach out directly to our team anytime.
       </p>
       <div class="flex justify-center gap-3 flex-wrap">
-        <div class="contact-email-badge" style="font-size: 1.05rem; padding: 12px 28px;">
+        <div class="contact-email-badge contact-email-badge-lg">
           heyyitsmeaditya@gmail.com
         </div>
       </div>
@@ -769,7 +788,7 @@
         <p class="footer-desc">
           An in-person teen hackathon bringing together creators, builders, and learners for code, community, and fresh boba tea.
         </p>
-        <div class="contact-email-badge" style="width: fit-content;">
+        <div class="contact-email-badge footer-email-badge">
           heyyitsmeaditya@gmail.com
         </div>
       </div>
