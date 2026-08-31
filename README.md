@@ -28,7 +28,7 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 - **Hack Club** (`hack-club-icon-rounded.svg`): Global nonprofit community of teen hackers & coding clubs.
 - **HCB** (`hcb-icon-icon-original.svg`): 501(c)(3) fiscal sponsor and financial platform for student hackathons.
 - **.XYZ Domains** (`xyz-logo-color.svg`): Providing free domain names for all participants.
-- **OSEN** (`OSEN.png`): Community sponsor supporting hackathons & developer events across India.
+- **OSEN** (`OSEN.png`): Sponsor supporting hackathons & developer events across India.
 - **HostingKarle** (`hostingKarle-logo.png`): Cloud hosting & server infrastructure partner.
 - **OpenRockets** (`openrocketsapps_logo.png`): Open-source model rocket simulation software partner.
 
