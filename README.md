@@ -12,7 +12,7 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 
 ## Registration & RSVP
 - **RSVP Link**: [bash.hackclub.com/events/50](https://bash.hackclub.com/events/50)
-- **Admission**: 100% Free ($0) with free boba tea, food & custom merch
+- **Admission**: 100% Free (₹0) with free boba tea, food & custom merch
 
 ---
 
