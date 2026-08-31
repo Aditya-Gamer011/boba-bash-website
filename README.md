@@ -45,7 +45,7 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 ---
 
 ## Contact & Reach Out
-- **Email**: `heyyitsmeaditya@gmail.com`
+- **Email**: `aditya@boba-bash.xyz`
 
 ---
 
