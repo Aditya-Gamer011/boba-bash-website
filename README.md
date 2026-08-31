@@ -21,10 +21,16 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 
 ---
 
+## Registration & RSVP
+- **RSVP Link**: [bash.hackclub.com/events/50](https://bash.hackclub.com/events/50)
+- **Admission**: 100% Free ($0) with unlimited fresh boba tea & meals
+
+---
+
 ## Venue & Location
-- **Venue**: MetroDesk Coworking
-- **Location**: Ghaziabad Namo Bharat (RRTS) & Metro Station, Patel Nagar, Sector 7, Uttar Pradesh 201005
-- **Google Maps**: [https://maps.app.goo.gl/8pEJfEtoYx5Gmmd47](https://maps.app.goo.gl/8pEJfEtoYx5Gmmd47)
+- **Venue**: SuperCo Coworking
+- **Location**: 6th Floor, Galaxy Blue Sapphire Plaza, Sector 4, Greater Noida West, Uttar Pradesh 201009
+- **Google Maps**: [https://maps.app.goo.gl/tVYwBGp5f9iKK5hE9](https://maps.app.goo.gl/tVYwBGp5f9iKK5hE9)
 
 ---
 
@@ -32,6 +38,9 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 - **Hack Club** (`hack-club-icon-rounded.svg`): Global nonprofit community of teen hackers & coding clubs.
 - **HCB** (`hcb-icon-icon-original.svg`): 501(c)(3) fiscal sponsor and financial platform for student hackathons.
 - **.XYZ Domains** (`xyz-logo-color.svg`): Providing free domain names for all participants.
+- **OSEN** (`OSEN.png`): Community sponsor supporting hackathons & developer events across India.
+- **HostingKarle** (`hostingKarle-logo.png`): Cloud hosting & server infrastructure partner.
+- **OpenRockets** (`openrocketsapps_logo.png`): Open-source model rocket simulation software partner.
 
 ---
 
