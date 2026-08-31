@@ -4,20 +4,9 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 
 ---
 
-## Official Schedule (9:30 AM – 3:30 PM)
-
-| Time | Activity | Description |
-| :--- | :--- | :--- |
-| **09:30 AM – 09:45 AM** | Opening Ceremony | Doors open, check-in & welcome kickoff |
-| **09:45 AM – 10:30 AM** | Web Dev Workshop | 45-min beginner hands-on web development session |
-| **10:30 AM – 11:30 AM** | Build Session 1 | Start building personal / project websites |
-| **11:30 AM – 11:45 AM** | Boba Break | 15-min bubble tea break & stretch |
-| **11:45 AM – 12:45 PM** | Build Session 2 | Adding features, styling, and refining |
-| **12:45 PM – 01:15 PM** | Shipping & RFID Station | Deploy websites + write live link into RFID smart ID cards |
-| **01:15 PM – 01:45 PM** | Hot Lunch Break | Lunch & social break |
-| **01:45 PM – 02:15 PM** | Showcase Round | Tap RFID cards, show off websites & community voting |
-| **02:15 PM – 03:15 PM** | Networking & Mini-Games | Type racing, trivia, challenges & networking |
-| **03:15 PM – 03:30 PM** | Closing Ceremony | Certificates distribution, swag drops & wrap up |
+## Event Schedule
+- **Status**: Schedule to be announced soon!
+- **Activities**: Beginner web dev workshops, project build sprints, fresh boba tea breaks, hot lunch, RFID smart badge programming, and an exciting community showcase.
 
 ---
 

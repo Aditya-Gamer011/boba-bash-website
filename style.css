@@ -805,7 +805,28 @@ body.menu-open {
   display: block;
 }
 
-/* Schedule / Timeline */
+/* Schedule Section */
+.schedule-tba-card {
+  border-radius: 20px;
+  padding: 56px 32px;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule-tba-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 .timeline-wrapper {
   max-width: 780px;
   margin: 0 auto;
