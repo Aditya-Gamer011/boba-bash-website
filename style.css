@@ -823,8 +823,8 @@ body.menu-open {
 /* Sponsors Section Styles */
 .sponsors-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .sponsor-card {
@@ -832,7 +832,7 @@ body.menu-open {
   background: var(--surface);
   display: flex;
   flex-direction: column;
-  padding: 24px 18px;
+  padding: 24px 20px;
   text-align: center;
   align-items: center;
   position: relative;
@@ -863,6 +863,10 @@ body.menu-open {
   width: auto;
   height: auto;
   object-fit: contain;
+}
+
+.sponsor-logo-rounded {
+  border-radius: 8px;
 }
 
 .sponsor-logo-hcb {
