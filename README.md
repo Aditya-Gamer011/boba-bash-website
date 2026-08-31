@@ -5,7 +5,7 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 ---
 
 ## Event Details & Schedule
-- **Date**: 20 September
+- **Date**: 20th September 2026
 - **Schedule**: To be announced soon!
 - **Activities**: Beginner web dev workshops, project build sprints, fresh boba tea breaks, hot lunch, RFID smart badge programming, and an exciting community showcase.
 
