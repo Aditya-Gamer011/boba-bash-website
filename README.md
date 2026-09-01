@@ -6,7 +6,7 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 
 ## Domain & Routing
 - **Main Domain (`boba-bash.xyz`)**: Redirects directly to Hack Club Boba Bash ([bash.hackclub.com](https://bash.hackclub.com)).
-- **Greater Noida Site**: Hosted at [`boba-bash.xyz/greater-noida/`](https://boba-bash.xyz/greater-noida/).
+- **Greater Noida Site**: Hosted at [`boba-bash.xyz/grn/`](https://boba-bash.xyz/grn/).
 
 ---
 
