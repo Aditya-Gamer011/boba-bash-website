@@ -31,6 +31,7 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 - **OSEN** (`OSEN.png`): Sponsor supporting hackathons & developer events across India.
 - **HostingKarle** (`hostingKarle-logo.png`): Cloud hosting & server infrastructure partner.
 - **OpenRockets** (`openrocketsapps_logo.png`): Open-source model rocket simulation software partner.
+- **Plot Armour** (`Plot-Armor-logo.png`): Sponsor providing premium themed apparel, merchandise & accessories.
 
 ---
 
