@@ -3,742 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boba Bash Greater Noida | In-Person Teen Hackathon</title>
-  
-  <!-- Meta tags for social sharing -->
-  <meta name="description" content="Boba Bash Greater Noida: A free, beginner-friendly teen hackathon with coding, making cool projects, free boba, meals, and merch in Greater Noida, NCR!" />
-  <meta property="og:title" content="Boba Bash Greater Noida" />
-  <meta property="og:description" content="Join 60+ teen hackers in Greater Noida for a day of making, learning, free boba, food, and custom merch!" />
-  <meta property="og:image" content="cup.png" />
+  <meta http-equiv="refresh" content="0; url=https://bash.hackclub.com" />
+  <link rel="canonical" href="https://bash.hackclub.com" />
   <link rel="icon" type="image/png" href="cup.png" />
-  <meta name="theme-color" content="#fbf6e8" />
-
-  <!-- Fonts from Boba Bash brand guide -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="style.css" />
+  <title>Boba Bash | Redirecting to Hack Club Boba Bash</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #fbf6e8;
+      color: #3d2b18;
+      text-align: center;
+      padding: 24px;
+    }
+    .redirect-card {
+      background: #ffffff;
+      border: 2.5px solid #3d2b18;
+      border-radius: 20px;
+      padding: 40px 32px;
+      box-shadow: 6px 6px 0 #3d2b18;
+      max-width: 460px;
+      width: 100%;
+    }
+    .boba-icon {
+      width: 64px;
+      height: auto;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+      color: #3d2b18;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #6b5842;
+      margin-bottom: 20px;
+    }
+    .redirect-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #f2c14e;
+      color: #3d2b18;
+      text-decoration: none;
+      font-weight: 700;
+      border: 2px solid #3d2b18;
+      border-radius: 12px;
+      box-shadow: 3px 3px 0 #3d2b18;
+      font-size: 1rem;
+      transition: transform 0.1s ease;
+    }
+    .redirect-btn:hover {
+      transform: translateY(-2px);
+    }
+    .gn-link-wrap {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1.5px solid #e0d5c1;
+      font-size: 0.92rem;
+    }
+    .gn-link {
+      color: #3d2b18;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    window.location.replace("https://bash.hackclub.com");
+  </script>
 </head>
 <body>
-
-  <!-- Background decorative floating boba pearls canvas -->
-  <div class="floating-boba-container" aria-hidden="true" id="bobaCanvas"></div>
-
-  <!-- Top Announcement Bar in Official Goldenrod -->
-  <aside class="top-banner">
-    <div class="container banner-content">
-      <span class="banner-badge">IN-PERSON EVENT</span>
-      <p class="banner-text">Boba Bash is coming to <strong>Greater Noida, NCR</strong>! Free entry, fresh boba, merch, and more!</p>
-      <a href="https://bash.hackclub.com/events/50" target="_blank" rel="noopener noreferrer" class="banner-link">RSVP Now &rarr;</a>
+  <div class="redirect-card">
+    <img src="cup.png" alt="Boba Bash Cup" class="boba-icon" />
+    <h1>Redirecting to Boba Bash...</h1>
+    <p>We are redirecting you to the official Hack Club Boba Bash homepage at <strong>bash.hackclub.com</strong>.</p>
+    <a href="https://bash.hackclub.com" class="redirect-btn">Visit bash.hackclub.com &rarr;</a>
+    <div class="gn-link-wrap">
+      Looking for Greater Noida? <a href="/greater-noida/" class="gn-link">Go to Greater Noida Event &rarr;</a>
     </div>
-  </aside>
-
-  <!-- Navigation Header -->
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#" class="brand-logo-link" aria-label="Boba Bash Greater Noida Home">
-        <img src="logofull.png" alt="Boba Bash Logo" class="brand-logo" />
-        <span class="city-pill">Greater Noida</span>
-      </a>
-
-      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#schedule" class="nav-link">Schedule</a>
-        <a href="#sponsors" class="nav-link">Sponsors</a>
-        <a href="#faq" class="nav-link">FAQ</a>
-        <a href="#venue" class="nav-link">Venue</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a href="https://bash.hackclub.com/events/50" target="_blank" rel="noopener noreferrer" class="btn btn-gradient btn-nav">
-          RSVP Now &rarr;
-        </a>
-        <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-  <div class="mobile-backdrop" id="menuBackdrop" aria-hidden="true"></div>
-
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container hero-grid">
-      <div class="hero-text-col">
-        
-        <!-- Speech Bubble Badge Component from Brand Guide -->
-        <div class="speech-bubble">
-          <div class="bubble-pill">
-            <span class="hero-badge-text">GREATER NOIDA • NCR</span>
-          </div>
-          <div class="bubble_tail" aria-hidden="true"></div>
-        </div>
-
-        <h1 class="hero-title font-display">
-          Build cool stuff.<br />
-          Sip fresh <span class="highlight-boba">Boba.</span>
-        </h1>
-
-        <p class="hero-description text-body">
-          A vibrant one-day gathering for middle school, high school, and teen makers across Greater Noida &amp; NCR. Code, build websites, make hardware, hang out with fellow creators, and enjoy fresh boba tea, free food, and custom merch!
-        </p>
-
-        <!-- Quick Event Meta Tags with Crisp SVG Icons -->
-        <div class="event-meta-cards">
-          <div class="meta-card">
-            <div class="meta-icon-box">
-              <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-              </svg>
-            </div>
-            <div class="meta-info">
-              <span class="meta-label">DATE</span>
-              <strong class="meta-value">20<sup>th</sup> September 2026</strong>
-            </div>
-          </div>
-
-          <div class="meta-card">
-            <div class="meta-icon-box">
-              <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-            </div>
-            <div class="meta-info">
-              <span class="meta-label">VENUE</span>
-              <strong class="meta-value">SuperCo Coworking</strong>
-            </div>
-          </div>
-
-          <div class="meta-card">
-            <div class="meta-icon-box">
-              <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
-                <line x1="2" y1="10" x2="22" y2="10"></line>
-              </svg>
-            </div>
-            <div class="meta-info">
-              <span class="meta-label">ADMISSION</span>
-              <strong class="meta-value">100% Free (₹0) • Meals &amp; Boba</strong>
-            </div>
-          </div>
-
-          <div class="meta-card">
-            <div class="meta-icon-box">
-              <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </div>
-            <div class="meta-info">
-              <span class="meta-label">WHO CAN COME?</span>
-              <strong class="meta-value">All Teens (13–18) Welcome</strong>
-            </div>
-          </div>
-        </div>
-
-        <!-- CTA Buttons -->
-        <div class="hero-cta-group">
-          <a href="https://bash.hackclub.com/events/50" target="_blank" rel="noopener noreferrer" class="btn btn-gradient btn-lg">
-            RSVP Now &rarr;
-          </a>
-          <a href="#about" class="btn btn-surface btn-lg">
-            Learn More &darr;
-          </a>
-        </div>
-
-        <div class="hero-social-proof">
-          <span class="pill-badge">
-            60 Hacker spots
-          </span>
-          <span class="text-caption text-ink-soft">Beginner friendly • No prior experience needed!</span>
-        </div>
-
-      </div>
-
-      <!-- Hero Mascot & Cup Visual -->
-      <div class="hero-visual-col">
-        <div class="hero-illustration-card border-line bg-surface shadow-card border-2">
-          <div class="mascot-badge-tag">
-            <img src="logowordmark.png" alt="Boba Bash Wordmark" class="wordmark-hero" />
-          </div>
-
-          <div class="cup-display-wrapper">
-            <img src="cup.png" alt="Boba Bash Cup Icon" class="boba-cup-hero" />
-            
-            <div class="floating-sticker sticker-1 shadow-control">
-              <span>Free Boba</span>
-            </div>
-            <div class="floating-sticker sticker-2 shadow-control">
-              <span>Hack &amp; Build</span>
-            </div>
-            <div class="floating-sticker sticker-3 shadow-control">
-              <span>Custom Merch</span>
-            </div>
-          </div>
-
-          <div class="card-footer-note bg-surface-alt border-line border-t-2">
-            <div class="flex items-center justify-between">
-              <div>
-                <h3 class="font-display font-bold text-ink mb-0">Boba Bash Greater Noida</h3>
-                <p class="text-caption text-ink-muted">SuperCo Coworking, NCR</p>
-              </div>
-              <span class="status-pill font-display">Spots Open Now</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section bg-surface-alt border-line border-t-2 border-b-2">
-    <div class="container">
-      <div class="section-header text-center">
-        <!-- Bubble Header from Brand Guide -->
-        <div class="speech-bubble">
-          <div class="bubble-pill">
-            <h2 class="text-heading">What is Boba Bash?</h2>
-          </div>
-          <div class="bubble_tail" aria-hidden="true"></div>
-        </div>
-        <p class="text-subheading text-ink-muted max-w-3xl mx-auto">
-          Boba Bash is an energetic, welcoming day of making things with tech, meeting friends, and drinking delicious bubble tea.
-        </p>
-      </div>
-
-      <div class="cards-grid-3">
-        <!-- Card 1 -->
-        <div class="about-card border-line border-2 shadow-card">
-          <div class="about-card-icon bg-bubble border-line border-2">
-            <svg class="feature-svg" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="16 18 22 12 16 6"></polyline>
-              <polyline points="8 6 2 12 8 18"></polyline>
-            </svg>
-          </div>
-          <h3 class="about-card-title font-display font-bold">Learn &amp; Build Websites</h3>
-          <p class="about-card-desc">
-            Start with our live hands-on Web Dev Workshop! Learn HTML/CSS basics, then spend focused build sessions coding your personal or project website with friendly mentor support.
-          </p>
-          <div class="about-card-footer">
-            <span class="about-tag">Beginner Workshop Included</span>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="about-card border-line border-2 shadow-card">
-          <div class="about-card-icon bg-goldenrod border-line border-2">
-            <svg class="feature-svg" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-              <line x1="2" y1="10" x2="22" y2="10"></line>
-              <path d="M7 15h2"></path>
-            </svg>
-          </div>
-          <h3 class="about-card-title font-display font-bold">RFID Smart Badges</h3>
-          <p class="about-card-desc">
-            Ship your website online and bring it to our <strong>RFID Station</strong>! We'll write your live website link into your physical RFID ID badge so anyone can tap and view your creation instantly.
-          </p>
-          <div class="about-card-footer">
-            <span class="about-tag">Tap-to-View NFC Badges</span>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="about-card border-line border-2 shadow-card">
-          <div class="about-card-icon bg-bubble border-line border-2">
-            <img src="cup.png" alt="Boba Cup" class="feature-cup-img" />
-          </div>
-          <h3 class="about-card-title font-display font-bold">Boba, Games &amp; Community</h3>
-          <p class="about-card-desc">
-            Enjoy fresh boba tea breaks, hot lunch, an exciting showcase round, mini-games &amp; trivia, networking with teen makers, official certificates, and awesome swag!
-          </p>
-          <div class="about-card-footer">
-            <span class="about-tag">100% Free Admission &amp; Swag</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Schedule Section -->
-  <section id="schedule" class="section">
-    <div class="container text-center">
-      <div class="section-header text-center">
-        <!-- Bubble Header from Brand Guide -->
-        <div class="speech-bubble">
-          <div class="bubble-pill">
-            <h2 class="text-heading">Event Schedule</h2>
-          </div>
-          <div class="bubble_tail" aria-hidden="true"></div>
-        </div>
-        <p class="text-subheading text-ink-muted max-w-3xl mx-auto">
-          A full day of coding, workshops, boba breaks, and project showcases.
-        </p>
-      </div>
-
-      <div class="schedule-tba-card border-line bg-surface shadow-card border-2">
-        <div class="schedule-tba-icon bg-goldenrod border-line border-2">
-          <svg class="feature-svg" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-        </div>
-        <h3 class="font-display text-title font-bold text-ink mb-2">Schedule to be announced soon!</h3>
-        <p class="text-subheading text-ink-muted max-w-xl mx-auto mb-4">
-          We're finalizing an action-packed agenda featuring beginner web dev workshops, project build sprints, fresh boba tea breaks, hot lunch, and an exciting community showcase. Stay tuned!
-        </p>
-        <div class="flex justify-center">
-          <a href="https://bash.hackclub.com/events/50" target="_blank" rel="noopener noreferrer" class="btn btn-gradient btn-lg">
-            RSVP to Get Updates &rarr;
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sponsors & Partners Section -->
-  <section id="sponsors" class="section bg-surface-alt border-line border-t-2 border-b-2">
-    <div class="container">
-      <div class="section-header text-center">
-        <!-- Bubble Header from Brand Guide -->
-        <div class="speech-bubble">
-          <div class="bubble-pill">
-            <h2 class="text-heading">Our Sponsors &amp; Partners</h2>
-          </div>
-          <div class="bubble_tail" aria-hidden="true"></div>
-        </div>
-        <p class="text-subheading text-ink-muted max-w-3xl mx-auto">
-          Big shoutout to the generous organizations powering Boba Bash Greater Noida with community support, fiscal backing, domains, hosting, and tech tooling!
-        </p>
-      </div>
-
-      <div class="sponsors-grid">
-        <!-- Sponsor 1: Hack Club -->
-        <div class="sponsor-card border-line border-2 shadow-card">
-          <div class="sponsor-logo-wrap">
-            <img src="hack-club-icon-rounded.svg" alt="Hack Club Logo" class="sponsor-logo-img" />
-          </div>
-          <h3 class="sponsor-name font-display font-bold">Hack Club</h3>
-          <p class="sponsor-desc">
-            A global nonprofit community of high school makers, coders, and artists supporting student-led clubs and hackathons worldwide.
-          </p>
-          <div class="sponsor-footer">
-            <span class="sponsor-badge">COMMUNITY PARTNER</span>
-            <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer" class="sponsor-link">hackclub.com &nearr;</a>
-          </div>
-        </div>
-
-        <!-- Sponsor 2: HCB -->
-        <div class="sponsor-card border-line border-2 shadow-card">
-          <div class="sponsor-logo-wrap">
-            <img src="hcb-icon-icon-original.svg" alt="HCB Logo" class="sponsor-logo-img sponsor-logo-hcb" />
-          </div>
-          <h3 class="sponsor-name font-display font-bold">HCB</h3>
-          <p class="sponsor-desc">
-            The 501(c)(3) fiscal sponsorship platform and financial home for student organizers and high school hackathons across the globe.
-          </p>
-          <div class="sponsor-footer">
-            <span class="sponsor-badge">FISCAL SPONSOR</span>
-            <a href="https://hcb.hackclub.com" target="_blank" rel="noopener noreferrer" class="sponsor-link">hcb.hackclub.com &nearr;</a>
-          </div>
-        </div>
-
-        <!-- Sponsor 3: .XYZ Domains -->
-        <div class="sponsor-card border-line border-2 shadow-card">
-          <div class="sponsor-logo-wrap">
-            <img src="xyz-logo-color.svg" alt=".XYZ Logo" class="sponsor-logo-img" />
-          </div>
-          <h3 class="sponsor-name font-display font-bold">.XYZ Domains</h3>
-          <p class="sponsor-desc">
-            The domain registry of choice for the next generation of internet innovators, providing free domain names for all participants.
-          </p>
-          <div class="sponsor-footer">
-            <span class="sponsor-badge">SPONSOR</span>
-            <a href="https://gen.xyz" target="_blank" rel="noopener noreferrer" class="sponsor-link">gen.xyz &nearr;</a>
-          </div>
-        </div>
-
-        <!-- Sponsor 4: OSEN -->
-        <div class="sponsor-card border-line border-2 shadow-card">
-          <div class="sponsor-logo-wrap">
-            <img src="OSEN.png" alt="OSEN Logo" class="sponsor-logo-img" />
-          </div>
-          <h3 class="sponsor-name font-display font-bold">OSEN</h3>
-          <p class="sponsor-desc">
-            Empowering student hackathons, developer meetups, and builder communities across India with sponsorships, resources, and event support.
-          </p>
-          <div class="sponsor-footer">
-            <span class="sponsor-badge">SPONSOR</span>
-            <a href="https://osen.live" target="_blank" rel="noopener noreferrer" class="sponsor-link">osen.live &nearr;</a>
-          </div>
-        </div>
-
-        <!-- Sponsor 5: HostingKarle -->
-        <div class="sponsor-card border-line border-2 shadow-card">
-          <div class="sponsor-logo-wrap">
-            <img src="hostingKarle-logo.png" alt="HostingKarle Logo" class="sponsor-logo-img sponsor-logo-rounded" />
-          </div>
-          <h3 class="sponsor-name font-display font-bold">HostingKarle</h3>
-          <p class="sponsor-desc">
-            Fast, reliable cloud hosting and server infrastructure empowering developers, student creators, and web projects.
-          </p>
-          <div class="sponsor-footer">
-            <span class="sponsor-badge">HOSTING PARTNER</span>
-            <a href="https://hostingkarle.com/" target="_blank" rel="noopener noreferrer" class="sponsor-link">hostingkarle.com &nearr;</a>
-          </div>
-        </div>
-
-        <!-- Sponsor 6: OpenRockets -->
-        <div class="sponsor-card border-line border-2 shadow-card">
-          <div class="sponsor-logo-wrap">
-            <img src="openrocketsapps_logo.png" alt="OpenRockets Logo" class="sponsor-logo-img" />
-          </div>
-          <h3 class="sponsor-name font-display font-bold">OpenRockets</h3>
-          <p class="sponsor-desc">
-            Open-source modeling and simulation software empowering students and makers to design, test, and launch aerospace projects.
-          </p>
-          <div class="sponsor-footer">
-            <span class="sponsor-badge">TECHNOLOGY PARTNER</span>
-            <a href="https://openrocket.info/" target="_blank" rel="noopener noreferrer" class="sponsor-link">openrocket.info &nearr;</a>
-          </div>
-        </div>
-
-        <!-- Sponsor 7: Plot Armour -->
-        <div class="sponsor-card border-line border-2 shadow-card">
-          <div class="sponsor-logo-wrap">
-            <img src="Plot-Armor-logo.png" alt="Plot Armour Logo" class="sponsor-logo-img sponsor-logo-rounded" />
-          </div>
-          <h3 class="sponsor-name font-display font-bold">Plot Armour</h3>
-          <p class="sponsor-desc">
-            Empowering creators and tech enthusiasts with premium themed apparel, merchandise, and unique lifestyle accessories.
-          </p>
-          <div class="sponsor-footer">
-            <span class="sponsor-badge">SPONSOR</span>
-            <a href="https://store.theplotarmour.xyz/" target="_blank" rel="noopener noreferrer" class="sponsor-link">theplotarmour.xyz &nearr;</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sponsor Reach-out Card without links -->
-      <div class="sponsor-callout-card border-line border-2 shadow-card">
-        <div>
-          <h3 class="sponsor-callout-title font-display font-bold text-ink mb-1">Want to sponsor Boba Bash Greater Noida?</h3>
-          <p class="text-body text-ink-muted mb-0">Help us sponsor boba tea, stickers, hardware components, or meals for teen creators.</p>
-        </div>
-        <div class="contact-email-badge">
-          aditya@boba-bash.xyz
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- RSVP Section -->
-  <section id="rsvp" class="section">
-    <div class="container">
-      <div class="rsvp-card-wrapper border-line bg-surface shadow-card border-2 text-center">
-        
-        <div class="speech-bubble">
-          <div class="bubble-pill">
-            <h2 class="text-heading">RSVP</h2>
-          </div>
-          <div class="bubble_tail" aria-hidden="true"></div>
-        </div>
-
-        <h3 class="font-display text-title font-bold text-ink">RSVPs Are Live!</h3>
-        <p class="text-subheading text-ink-muted max-w-2xl mx-auto mt-2">
-          Registration for Boba Bash Greater Noida is officially open! Claim your free ticket, secure your boba pass, and get ready for an unforgettable day of coding, making, and community.
-        </p>
-
-        <div class="rsvp-badges">
-          <span class="pill-badge pill-badge-lg">
-            100% Free Admission
-          </span>
-          <span class="pill-badge pill-badge-lg">
-            Free Boba, Food &amp; Merch
-          </span>
-          <span class="pill-badge pill-badge-lg">
-            60 Spots Capacity
-          </span>
-        </div>
-
-        <div class="rsvp-action-wrap">
-          <a href="https://bash.hackclub.com/events/50" target="_blank" rel="noopener noreferrer" class="btn btn-gradient btn-lg">
-            Register Free on Hack Club &rarr;
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section id="faq" class="section bg-surface-alt border-line border-t-2 border-b-2">
-    <div class="container">
-      <div class="section-header text-center">
-        <div class="speech-bubble">
-          <div class="bubble-pill">
-            <h2 class="text-heading">Frequently Asked Questions</h2>
-          </div>
-          <div class="bubble_tail" aria-hidden="true"></div>
-        </div>
-        <p class="text-subheading text-ink-muted max-w-3xl mx-auto">
-          Everything you need to know before attending Boba Bash Greater Noida.
-        </p>
-      </div>
-
-      <div class="faq-accordion-wrapper max-w-3xl mx-auto">
-        
-        <details class="faq-item border-line bg-surface shadow-card border-2" open>
-          <summary class="faq-question font-display font-bold text-ink">
-            <span>What is Boba Bash?</span>
-            <span class="faq-chevron">&plus;</span>
-          </summary>
-          <div class="faq-answer text-body text-ink-muted">
-            Boba Bash is an in-person, student-run hackathon and creative coding jam. Teens come together to build projects (websites, games, apps, hardware, design prototypes), learn from mentors, eat great food, and enjoy fresh bubble tea.
-          </div>
-        </details>
-
-        <details class="faq-item border-line bg-surface shadow-card border-2">
-          <summary class="faq-question font-display font-bold text-ink">
-            <span>Who can participate?</span>
-            <span class="faq-chevron">&plus;</span>
-          </summary>
-          <div class="faq-answer text-body text-ink-muted">
-            Any middle school or high school student (ages ~13–18) in Greater Noida, Noida, Ghaziabad, and across NCR is welcome!
-          </div>
-        </details>
-
-        <details class="faq-item border-line bg-surface shadow-card border-2">
-          <summary class="faq-question font-display font-bold text-ink">
-            <span>I have never coded before. Can I still attend?</span>
-            <span class="faq-chevron">&plus;</span>
-          </summary>
-          <div class="faq-answer text-body text-ink-muted">
-            <strong>YES, 100%!</strong> Boba Bash is explicitly built to be beginner-friendly. Right after our opening ceremony, we host a dedicated <strong>beginner Web Dev Workshop</strong> where you'll learn how to build and style a website from scratch with friendly mentor guidance!
-          </div>
-        </details>
-
-        <details class="faq-item border-line bg-surface shadow-card border-2">
-          <summary class="faq-question font-display font-bold text-ink">
-            <span>How do the RFID-enabled ID cards work?</span>
-            <span class="faq-chevron">&plus;</span>
-          </summary>
-          <div class="faq-answer text-body text-ink-muted">
-            Every participant receives an RFID-enabled ID badge at check-in. During the project shipping session, our team will program your badge with your live website link at the RFID station. During the community showcase, attendees can simply tap your card with their phones to instantly open your website!
-          </div>
-        </details>
-
-        <details class="faq-item border-line bg-surface shadow-card border-2">
-          <summary class="faq-question font-display font-bold text-ink">
-            <span>How much does it cost?</span>
-            <span class="faq-chevron">&plus;</span>
-          </summary>
-          <div class="faq-answer text-body text-ink-muted">
-            It is <strong>completely free (₹0)</strong>! Thanks to our sponsors and community partners, your admission, meals, boba drinks, stickers, and swag are fully covered.
-          </div>
-        </details>
-
-        <details class="faq-item border-line bg-surface shadow-card border-2">
-          <summary class="faq-question font-display font-bold text-ink">
-            <span>What should I bring?</span>
-            <span class="faq-chevron">&plus;</span>
-          </summary>
-          <div class="faq-answer text-body text-ink-muted">
-            Bring your laptop, charger, student ID, a water bottle, and a curious mindset! If you don't have a laptop, reach out to our team in advance and we'll try our best to work out a solution for you!
-          </div>
-        </details>
-
-        <details class="faq-item border-line bg-surface shadow-card border-2">
-          <summary class="faq-question font-display font-bold text-ink">
-            <span>Are the boba tea, food, and merch really free?</span>
-            <span class="faq-chevron">&plus;</span>
-          </summary>
-          <div class="faq-answer text-body text-ink-muted">
-            <strong>YES, 100%!</strong> Thanks to our generous sponsors and partners, freshly brewed bubble tea, hot lunch, snacks, sticker packs, and custom event merchandise are completely free for all registered participants.
-          </div>
-        </details>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Venue & Travel Section -->
-  <section id="venue" class="section">
-    <div class="container">
-      <div class="venue-grid">
-        <div class="venue-info-col">
-          <div class="speech-bubble">
-            <div class="bubble-pill">
-              <h2 class="text-heading">Venue &amp; Location</h2>
-            </div>
-            <div class="bubble_tail" aria-hidden="true"></div>
-          </div>
-          <h3 class="font-display text-title font-bold text-ink mt-2">SuperCo Coworking</h3>
-          <p class="text-body text-ink-muted">
-            The event will be hosted at <strong>SuperCo Coworking</strong>, located inside Galaxy Blue Sapphire Plaza, Sector 4, Greater Noida West. Equipped with high-speed fiber WiFi, dedicated desk power plugs, air conditioning, recreation zones, and a modern, vibrant workspace.
-          </p>
-
-          <div class="venue-points mt-3">
-            <div class="venue-point">
-              <div class="point-icon">
-                <svg class="point-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="4" y="3" width="16" height="16" rx="2"></rect>
-                  <path d="M4 11h16"></path>
-                  <path d="M12 3v8"></path>
-                  <path d="m8 19-2 3"></path>
-                  <path d="m16 19 2 3"></path>
-                  <circle cx="8" cy="15" r="1"></circle>
-                  <circle cx="16" cy="15" r="1"></circle>
-                </svg>
-              </div>
-              <div>
-                <strong class="font-display text-ink">Galaxy Blue Sapphire Plaza, Sector 4</strong>
-                <p class="text-caption text-ink-soft">Prime Greater Noida West hub with easy connectivity across NCR.</p>
-              </div>
-            </div>
-
-            <div class="venue-point">
-              <div class="point-icon">
-                <svg class="point-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9C1.5 11.2 1 12 1 13v3c0 .6.4 1 1 1h2"></path>
-                  <circle cx="7" cy="17" r="2"></circle>
-                  <path d="M9 17h6"></path>
-                  <circle cx="17" cy="17" r="2"></circle>
-                </svg>
-              </div>
-              <div>
-                <strong class="font-display text-ink">Modern Maker Infrastructure</strong>
-                <p class="text-caption text-ink-soft">Ample workstation seating, dedicated power outlets, high-speed fiber internet, and breakout zones.</p>
-              </div>
-            </div>
-
-            <div class="venue-point">
-              <div class="point-icon">
-                <svg class="point-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
-              </div>
-              <div>
-                <strong class="font-display text-ink">Safe &amp; Supervised Workspace</strong>
-                <p class="text-caption text-ink-soft">Full mentor support, secure check-in, and professional facilities throughout the event.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="venue-card-col">
-          <div class="border-line bg-surface shadow-card border-2 p-5 venue-box">
-            <div class="venue-map-placeholder border-line border-2">
-              <div class="map-inner">
-                <div class="map-pin">
-                  <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
-                <h4 class="font-display font-bold text-ink">SuperCo Coworking</h4>
-                <p class="text-caption text-ink-muted">6th Floor, Galaxy Blue Sapphire Plaza, Sector 4, Greater Noida West, UP 201009</p>
-                <a href="https://maps.app.goo.gl/tVYwBGp5f9iKK5hE9" target="_blank" rel="noopener noreferrer" class="btn btn-surface btn-sm mt-2">
-                  Open in Google Maps &nearr;
-                </a>
-              </div>
-            </div>
-            <div class="venue-extra-info mt-3 pt-3 border-line border-t">
-              <p class="text-caption text-ink-muted mb-0">
-                Galaxy Blue Sapphire Plaza, Sector 4, Greater Noida West. Passes will be issued upon arrival.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Community Reachout Banner -->
-  <section class="section-cta bg-surface-alt border-line border-t-2">
-    <div class="container text-center">
-      <div class="mascot-row mb-3">
-        <img src="logodetail.png" alt="Boba Bash Mascot Detail" class="footer-mascot" />
-      </div>
-      <h2 class="font-display text-title font-bold text-ink">Ready to brew something incredible?</h2>
-      <p class="text-subheading text-ink-muted max-w-2xl mx-auto mb-4">
-        Have questions, ideas, or want to partner with us? You can reach out directly to our team anytime.
-      </p>
-      <div class="flex justify-center gap-3 flex-wrap">
-        <div class="contact-email-badge contact-email-badge-lg">
-          aditya@boba-bash.xyz
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Redesigned Clean Site Footer -->
-  <footer class="site-footer">
-    <div class="container footer-main-grid">
-      
-      <!-- Brand & Info Column -->
-      <div class="footer-brand-wrap">
-        <div class="footer-logo-row">
-          <img src="logofull.png" alt="Boba Bash Logo" class="footer-logo" />
-          <span class="city-pill">Greater Noida</span>
-        </div>
-        <p class="footer-desc">
-          An in-person teen hackathon bringing together creators, builders, and learners for code, community, and fresh boba tea.
-        </p>
-        <div class="contact-email-badge footer-email-badge">
-          aditya@boba-bash.xyz
-        </div>
-      </div>
-
-      <!-- Quick Navigation Column -->
-      <div class="footer-nav-col">
-        <h4 class="footer-col-title">Navigation</h4>
-        <ul class="footer-nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#sponsors">Sponsors</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#venue">Venue</a></li>
-          <li><a href="https://bash.hackclub.com/events/50" target="_blank" rel="noopener noreferrer">RSVP &nearr;</a></li>
-        </ul>
-      </div>
-
-      <!-- Event Venue Quick Card -->
-      <div class="footer-info-col">
-        <h4 class="footer-col-title">Venue Details</h4>
-        <div class="footer-info-card">
-          <span class="footer-info-heading">Location</span>
-          <p class="footer-info-body mb-0">
-            <strong>SuperCo Coworking</strong><br />
-            6th Floor, Galaxy Blue Sapphire Plaza, Sector 4, Greater Noida West, UP 201009
-          </p>
-          <a href="https://maps.app.goo.gl/tVYwBGp5f9iKK5hE9" target="_blank" rel="noopener noreferrer" class="sponsor-link mt-1">
-            Open in Google Maps &nearr;
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Clean Bottom Bar -->
-    <div class="footer-bottom-bar">
-      <div class="container">
-        <p class="footer-copyright">
-          &copy; 2026 Boba Bash Greater Noida. All rights reserved.
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  </div>
 </body>
 </html>

@@ -4,6 +4,12 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 
 ---
 
+## Domain & Routing
+- **Main Domain (`boba-bash.xyz`)**: Redirects directly to Hack Club Boba Bash ([bash.hackclub.com](https://bash.hackclub.com)).
+- **Greater Noida Site**: Hosted at [`boba-bash.xyz/greater-noida/`](https://boba-bash.xyz/greater-noida/).
+
+---
+
 ## Event Details & Schedule
 - **Date**: 20th September 2026
 - **Schedule**: To be announced soon!
