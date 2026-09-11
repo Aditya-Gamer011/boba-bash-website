@@ -930,12 +930,14 @@ body.menu-open {
   border-radius: 8px;
 }
 
-.sponsor-logo-hcb {
-  height: 66px;
-  width: 66px;
-  max-height: 66px;
-  max-width: 66px;
-  object-fit: contain;
+.sponsor-logo-campusbloom {
+  max-height: 68px;
+  max-width: 175px;
+}
+
+.sponsor-logo-origohost {
+  max-height: 64px;
+  max-width: 64px;
 }
 
 .contact-email-badge {

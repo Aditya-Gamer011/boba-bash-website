@@ -38,6 +38,7 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 - **OpenRockets** (`openrocketsapps_logo.png`): Open-source model rocket simulation software partner ([openrockets.com](https://openrockets.com/)).
 - **Plot Armour** (`Plot-Armor-logo.png`): Sponsor providing premium themed apparel, merchandise & accessories.
 - **CampusBloom** (`campusbloom-logo.png`): Sponsor providing collegiate and varsity-inspired student apparel ([campusbloom.in](https://campusbloom.in/)).
+- **OrigoHOST** (`OrigoHOST.png`): Sponsor providing developer community and infrastructure support ([origohost.in](https://origohost.in/)).
 
 ---
 
