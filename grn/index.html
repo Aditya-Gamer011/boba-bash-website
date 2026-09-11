@@ -22,8 +22,6 @@
 </head>
 <body>
 
-  <!-- Background decorative floating boba pearls canvas -->
-  <div class="floating-boba-container" aria-hidden="true" id="bobaCanvas"></div>
 
   <!-- Top Announcement Bar in Official Goldenrod -->
   <aside class="top-banner">
@@ -99,7 +97,7 @@
             </div>
             <div class="meta-info">
               <span class="meta-label">DATE</span>
-              <strong class="meta-value">Coming Soon!</strong>
+              <strong class="meta-value">24<sup>th</sup> October 2026</strong>
             </div>
           </div>
 
@@ -167,12 +165,21 @@
       <!-- Hero Mascot & Cup Visual -->
       <div class="hero-visual-col">
         <div class="hero-illustration-card border-line bg-surface shadow-card border-2">
+          <div class="hero-card-header bg-goldenrod border-line border-b-2">
+            <div class="browser-dots">
+              <span class="window-btn window-btn-close">&times;</span>
+              <span class="window-btn window-btn-min">&minus;</span>
+              <span class="window-btn window-btn-max">&#43;</span>
+            </div>
+            <span class="hero-badge-pill">boba-bash.xyz/grn</span>
+          </div>
+
           <div class="mascot-badge-tag">
-            <img src="../logowordmark.png" alt="Boba Bash Wordmark" class="wordmark-hero" />
+            <img src="../brand-figma/boba-logo-art.png" alt="Boba Bash Wordmark" class="wordmark-hero" />
           </div>
 
           <div class="cup-display-wrapper">
-            <img src="../cup.png" alt="Boba Bash Cup Icon" class="boba-cup-hero" />
+            <img src="../brand-figma/boba-cup-earth.png" alt="Boba Bash Earth Cup Mascot" class="boba-cup-hero" />
             
             <div class="floating-sticker sticker-1 shadow-control">
               <span>Free Boba</span>
@@ -200,7 +207,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section bg-surface-alt border-line border-t-2 border-b-2">
+  <section id="about" class="section section-about border-line border-t-2">
     <div class="container">
       <div class="section-header text-center">
         <!-- Bubble Header from Brand Guide -->
@@ -218,11 +225,8 @@
       <div class="cards-grid-3">
         <!-- Card 1 -->
         <div class="about-card border-line border-2 shadow-card">
-          <div class="about-card-icon bg-bubble border-line border-2">
-            <svg class="feature-svg" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="16 18 22 12 16 6"></polyline>
-              <polyline points="8 6 2 12 8 18"></polyline>
-            </svg>
+          <div class="about-card-art-wrap">
+            <img src="../brand-figma/orpheus-coding.png" alt="Orpheus coding on a laptop" class="about-card-art" />
           </div>
           <h3 class="about-card-title font-display font-bold">Learn &amp; Build Websites</h3>
           <p class="about-card-desc">
@@ -235,12 +239,8 @@
 
         <!-- Card 2 -->
         <div class="about-card border-line border-2 shadow-card">
-          <div class="about-card-icon bg-goldenrod border-line border-2">
-            <svg class="feature-svg" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-              <line x1="2" y1="10" x2="22" y2="10"></line>
-              <path d="M7 15h2"></path>
-            </svg>
+          <div class="about-card-art-wrap">
+            <img src="../brand-figma/orpheus-table.png" alt="Teen makers collaborating at a hackathon table" class="about-card-art" />
           </div>
           <h3 class="about-card-title font-display font-bold">RFID Smart Badges</h3>
           <p class="about-card-desc">
@@ -253,8 +253,8 @@
 
         <!-- Card 3 -->
         <div class="about-card border-line border-2 shadow-card">
-          <div class="about-card-icon bg-bubble border-line border-2">
-            <img src="../cup.png" alt="Boba Cup" class="feature-cup-img" />
+          <div class="about-card-art-wrap">
+            <img src="../brand-figma/orpheus-dreaming.png" alt="Orpheus enjoying fresh boba tea" class="about-card-art" />
           </div>
           <h3 class="about-card-title font-display font-bold">Boba, Games &amp; Community</h3>
           <p class="about-card-desc">
@@ -268,8 +268,13 @@
     </div>
   </section>
 
+  <!-- Torn Paper Section Divider (Seamless tear between About and Schedule) -->
+  <div class="paper-tear-divider" aria-hidden="true">
+    <img src="../brand-figma/paper-bt.png" alt="" class="paper-tear-img" />
+  </div>
+
   <!-- Schedule Section -->
-  <section id="schedule" class="section">
+  <section id="schedule" class="section section-schedule">
     <div class="container text-center">
       <div class="section-header text-center">
         <!-- Bubble Header from Brand Guide -->
@@ -285,7 +290,7 @@
       </div>
 
       <div class="schedule-tba-card border-line bg-surface shadow-card border-2">
-        <div class="schedule-tba-icon bg-goldenrod border-line border-2">
+        <div class="schedule-tba-icon">
           <svg class="feature-svg" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"></circle>
             <polyline points="12 6 12 12 16 14"></polyline>
@@ -697,7 +702,7 @@
   <section class="section-cta bg-surface-alt border-line border-t-2">
     <div class="container text-center">
       <div class="mascot-row mb-3">
-        <img src="../logodetail.png" alt="Boba Bash Mascot Detail" class="footer-mascot" />
+        <img src="../brand-figma/boba-logo-art.png" alt="Boba Bash Mascot Logo" class="footer-mascot" />
       </div>
       <h2 class="font-display text-title font-bold text-ink">Ready to brew something incredible?</h2>
       <p class="text-subheading text-ink-muted max-w-2xl mx-auto mb-4">
@@ -763,7 +768,7 @@
     <div class="footer-bottom-bar">
       <div class="container">
         <p class="footer-copyright">
-          &copy; 2026 Boba Bash Greater Noida. All rights reserved.
+          &copy; 2026 Boba Bash Greater Noida.
         </p>
       </div>
     </div>
