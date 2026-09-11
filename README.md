@@ -11,7 +11,7 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 ---
 
 ## Event Details & Schedule
-- **Date**: 20th September 2026
+- **Date**: Coming Soon!
 - **Schedule**: To be announced soon!
 - **Activities**: Beginner web dev workshops, project build sprints, fresh boba tea breaks, hot lunch, RFID smart badge programming, and an exciting community showcase.
 
@@ -32,17 +32,16 @@ A clean, responsive, participant-facing event website for **Boba Bash Greater No
 
 ## Sponsors & Partners
 - **Hack Club** (`hack-club-icon-rounded.svg`): Global nonprofit community of teen hackers & coding clubs.
-- **HCB** (`hcb-icon-icon-original.svg`): 501(c)(3) fiscal sponsor and financial platform for student hackathons.
 - **.XYZ Domains** (`xyz-logo-color.svg`): Providing free domain names for all participants.
 - **OSEN** (`OSEN.png`): Sponsor supporting hackathons & developer events across India.
 - **HostingKarle** (`hostingKarle-logo.png`): Cloud hosting & server infrastructure partner.
-- **OpenRockets** (`openrocketsapps_logo.png`): Open-source model rocket simulation software partner.
+- **OpenRockets** (`openrocketsapps_logo.png`): Open-source model rocket simulation software partner ([openrockets.com](https://openrockets.com/)).
 - **Plot Armour** (`Plot-Armor-logo.png`): Sponsor providing premium themed apparel, merchandise & accessories.
 
 ---
 
 ## Contact & Reach Out
-- **Email**: `aditya@boba-bash.xyz`
+- **Email**: `support@boba-bash.xyz`
 
 ---
 
