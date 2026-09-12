@@ -694,20 +694,6 @@ body.menu-open {
   color: var(--ink);
 }
 
-.mascot-badge-tag {
-  padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--surface-alt);
-  border-bottom: 2px solid var(--line);
-}
-
-.wordmark-hero {
-  max-height: 52px;
-  width: auto;
-  object-fit: contain;
-}
 
 .cup-display-wrapper {
   padding: 36px 20px 42px;
